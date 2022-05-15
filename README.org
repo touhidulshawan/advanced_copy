@@ -28,8 +28,9 @@ cd coreutils-latest-version
 #+end_src
 
 * Download the Advanced Copy patch
+**USE LATEST advcpmv FROM HERE [[https://github.com/jarun/advcpmv]]**
 #+begin_src bash
-wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
+wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.9-9.0.patch
 #+end_src
 
 #+RESULTS:
