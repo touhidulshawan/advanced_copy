@@ -24,13 +24,15 @@ tar -xvf coreutils-latest-version.tar.xz
 
 ** Go to that directory
 #+begin_src bash
-cd coreutils-8.32
+cd coreutils-latest-version
 #+end_src
 
 * Download the Advanced Copy patch
 #+begin_src bash
 wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
 #+end_src
+
+#+RESULTS:
 
 
 ** Apply the patch
