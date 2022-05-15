@@ -1,0 +1,59 @@
+#+title: Advance Copy Utility
+#+description: Patch existing copy (cp) utility for advanced stuff in linux
+
+* TABLE OF CONTENTS :toc:
+- [[#download-latest-gnu-coreutils][Download latest GNU coreutils]]
+- [[#extract-the-download-archive][Extract the download archive]]
+  - [[#go-to-that-directory][Go to that directory]]
+- [[#download-the-advanced-copy-patch][Download the Advanced Copy patch]]
+  - [[#apply-the-patch][Apply the patch]]
+- [[#move-cp-and-mv-patched-binaries][Move cp and mv patched binaries]]
+- [[#usage][Usage]]
+
+* Download latest GNU coreutils
+
++ REPLACE **coreutils-9.1.tar.xz** WITH LATEST VERSION FROM  [[https://ftp.gnu.org/gnu/coreutils/]]
+#+begin_src bash
+wget http://ftp.gnu.org/gnu/coreutils/coreutils-9.1.tar.xz
+#+end_src
+
+* Extract the download archive
+#+begin_src bash
+tar xvJF coreutils-8.32.tar.xz
+#+end_src
+
+** Go to that directory
+#+begin_src bash
+cd coreutils-8.32
+#+end_src
+
+* Download the Advanced Copy patch
+#+begin_src bash
+wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
+#+end_src
+
+
+** Apply the patch
+
+#+begin_src bash
+patch -p1 -i advcpmv-0.8-8.32.patch
+#+end_src
+
+#+begin_src bash
+./configure
+#+end_src
+
+#+begin_src bash
+make
+#+end_src
+
+* Move cp and mv patched binaries
+#+begin_src bash
+sudo cp src/cp /usr/local/bin/cp
+sudo cp src/mv /usr/local/bin/mv
+#+end_src
+
+* Usage
+#+begin_src bash
+cp -g source destination
+#+end_src
