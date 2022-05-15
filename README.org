@@ -19,7 +19,7 @@ wget http://ftp.gnu.org/gnu/coreutils/coreutils-9.1.tar.xz
 
 * Extract the download archive
 #+begin_src bash
-tar xvJF coreutils-8.32.tar.xz
+tar -xvf coreutils-8.32.tar.xz
 #+end_src
 
 ** Go to that directory
