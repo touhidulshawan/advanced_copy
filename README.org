@@ -2,6 +2,7 @@
 #+description: Patch existing copy (cp) utility for advanced stuff in linux
 
 * TABLE OF CONTENTS :toc:
+- [[#automation-script][Automation Script]]
 - [[#download-latest-gnu-coreutils][Download latest GNU coreutils]]
 - [[#extract-the-download-archive][Extract the download archive]]
   - [[#go-to-that-directory][Go to that directory]]
@@ -9,6 +10,9 @@
   - [[#apply-the-patch][Apply the patch]]
 - [[#move-cp-and-mv-patched-binaries][Move cp and mv patched binaries]]
 - [[#usage][Usage]]
+
+* Automation Script
+You can automate whole this process just running this [[https://github.com/touhidulshawan/scripts/blob/main/bash/advanced_copy.sh][script]]
 
 * Download latest GNU coreutils
 
